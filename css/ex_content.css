@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+/* mobile */
+.content {
+    width: 1400px;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.content>figure {
+    width: 48%;
+    margin: 0;
+}
+
+.content>figure>img {
+    width: 100%;
+}
+
+/* =====================================================================================
+======================================= moblie==============================================
+===================================================================================== */
+
+
+@media(max-width:768px){
+.content {width: 100%; flex-direction: column;}
+.content>figure {width: 100%;}
+}
+
+
+@media print {
+    header, footer { display: none}
+    
+    /* .map{display:block;} *{display: none;} */
+
+    .content figure:nth-child(2),
+    .content figure:nth-child(4){display: none;}
+}
+
+
+/* 
+분기점:
+모바일 (320 ~ 767)
+타블렛 (768 ~ 1024)
+데스크탑 (1025 ~ 최적화 사이즈(내가 작업한 사이즈까지)) */

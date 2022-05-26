@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+@import url(./common.css);
+
+body{width:765px; height: 530px; }
+
+.main-box{margin: 50px 85px 0px;}
+
+.main-box>div>h2{
+    font-family: 'S-CoreDream-4Regular';
+    font-size: 1.45rem;
+    margin-bottom: 40px;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.login{width: 60%;}
+.login>p>input{
+    width: 310px;
+    padding: 10px 7px;
+    margin-bottom: 10px;
+}
+
+.login-box{}
+
+.login-check{
+    display: flex;
+    align-items: center;
+    width: 310px;
+}
+.login-check{}
+.login-check>input{border: #777;}
+.login-check>p{font-family: 'S-CoreDream-3Light'; color: #777; font-size: 0.85rem; padding-right: 15px;}
+
+.login-a{display: flex;}
+.login-a>a{font-family: 'S-CoreDream-3Light'; color: #777;font-size: 0.85rem;}
+
+.login-a>a:nth-child(1):after{
+    content: '';
+    display: inline-block;
+    width: 12px;
+    border-top: 1px solid #777;
+    transform: rotate(90deg) translateX(-2px);
+    margin: 2px;
+}
+
+.login-a>a:nth-child(2):after{
+    content: '';
+    display: inline-block;
+    width: 12px;
+    border-top: 1px solid #777;
+    transform: rotate(90deg) translateX(-2px);
+    margin: 2px;
+}
+
+
+/* button */
+.login-box button{
+    color: #fff;
+    background-color: #FC615D;
+    font-family: 'S-CoreDream-5Medium';
+    font-size: 1.1rem;
+    width: 310px;
+    border: none;
+    padding: 10px;
+    margin:20px 0 40px;
+}
+.login-box button:hover{
+    color: #fff;
+    background-color: #000000;
+}
+
+/* sns-btn */
+.sns-btn{
+    display: flex;
+    justify-content: space-around;
+    width: 310px;
+    text-align: center;
+}
+.sns-btn>a{
+    display: inline-block;
+    width: 90px; height: 30px;
+    padding-top: 65px;
+    font-family: 'S-CoreDream-3Light';
+    font-size: 0.85rem;
+}
+/* naver */
+.sns-btn>a:nth-child(1){
+    background: url('../image/icon/naver_logo_icon.png') no-repeat;
+    background-position: center;
+}
+/* kakao */
+.sns-btn>a:nth-child(2){
+    background: url('../image/icon/kakao_logo_icon.png') no-repeat;
+    background-position: center;
+}
+
+/* vanner */
+.vanner>a{display: block; width: 255px; vertical-align: middle;}
+.vanner>a>img{width: 100%;  vertical-align: middle;}
+
+
+
+/* -----------------------------------footer---------------------------------------------- */
+
+/* footer */
+footer{ margin: 0 85px;}
+footer div{
+    width: 340px;
+    text-align: center;}
+footer div>a{
+    display: block;
+    color: #777;
+    font-size: 0.85rem;
+    margin: 0;
+    padding: 0;
+    width: 100%
+}
+footer div>a::before{
+    content: '';
+    display: block;
+    width: 99%;
+    border-top: 1px solid #777; 
+    margin-bottom: 10px;
+    /* transform: translateY(-8px); */
+}
