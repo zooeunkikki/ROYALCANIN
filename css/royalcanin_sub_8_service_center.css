@@ -7,7 +7,6 @@ main{
     width: 1280px;
     margin: 130px auto 0;
     background: url('../image/bg/homepage_bg.png') repeat-y;
-    background-position: 0% 0%;
 }
 
 .main-box{}
