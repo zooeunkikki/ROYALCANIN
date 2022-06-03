@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+@import url('./common.css');
+
+
+/* main */
+main{
+    margin: 100px auto 0;
+    width: 1600px;
+    background: url('../image/bg/homepage_bg.png')no-repeat;
+    /* 임시 */
+    height: 1000vh;
+    border: 1px solid #000;
+}
+/* ===================================
+=========cushion==========================
+=================================== */
+.cushion-100{margin-top: 100px;}
+.cushion-60{margin-top: 60px;}
+
+
+
+/* ===main==========================
+===================================
+=================================== */
+.main-box{}
+.review-vanner{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 30px 50px 80px;
+    width: 100%;
+    background: url('../image/vanner/review/review_vanner_01.jpg')0% 0% / 100% no-repeat;
+}
+.vanner-head{
+    position: relative;
+    width: 60%;
+}
+.vanner-head>h2::after{
+    position: absolute;
+    top: -2%; left: -3%;
+    content: '';
+    display: inline-block;
+    width: 242px; height: 69px;
+    background: url('../image/vanner/review/review_vector.svg')no-repeat;
+    opacity: 0.5;
+}
+.vanner-head>h2{
+    color: #4b0000;
+    font-family: 'S-CoreDream-6Bold';
+    font-size:2.57rem;
+}
+
+.vanner-head>p::before{
+    content: '';
+    display: block;
+    width: 40px;
+    border-top: 1px solid #760606;
+    margin: 8px 0;
+}
+.vanner-head>p{
+    margin-top: 60px;
+    display: block;
+    color: #760606;
+    font-family: 'S-CoreDream-3Light';
+    font-size: 1.4rem;
+    white-space: pre-line;
+}
+
+.review-vanner>a{
+    width: 60px; height: 60px;
+    background-color: #FFCC9D;
+    border-radius: 100px;
+    color: #760606;
+    font-family: 'S-CoreDream-6Bold';
+    font-size: 1.45rem;
+    padding: 13px 5px 10px;
+    transform: translateY(10px);
+}
+
+.review-vanner>p::before{
+    content: '';
+    display: inline-block;
+    height: 110px;
+    border-left: 2px solid #760606;
+    margin-bottom: 20px;
+}
+.review-vanner>p{
+    display: inline-block;
+    color: #760606;
+    font-family: 'S-CoreDream-3Light';
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+}
+/* ===================================
+============md-box=======================
+=================================== */
+.md-box{
+    width: 1280px;
+    margin: 0 auto;
+}
+.review-headline{}
+.review-headline>h3::before{
+    content: '';
+    display: block;
+    width: 400px;
+    border-top: 1px solid #FF5151;
+    margin: 0; 
+}
+
+.review-headline>h3{
+    margin: 0 auto;
+    color: #fff;
+    font-family: 'S-CoreDream-5Medium';
+    font-size: 1.75rem;
+    text-align: center;
+    width: 320px; padding: 5px 20px;
+    border-radius: 100px;
+    background-color: #FF5151;
+}
+
+.review-headline>h3::after{
+    content: '';
+    display: block;
+    width: 400px;
+    border-top: 1px solid #FF5151;
+}
+
+
+
+
+
+
+/* ===================================
+===================================
+=================================== */
