@@ -209,7 +209,7 @@ header div nav>span:hover>.burger{display: flex;}
 
 
 /* footer */
-footer{}
+footer{width: 100%; overflow: hidden;}
 .ab-line::before{
     content:'';
     display: inline-block;
