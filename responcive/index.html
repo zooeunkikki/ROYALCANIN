@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./bootstrap.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-6">01</div>
+            <div class="col-md-4 col-sm-6">02</div>
+            <div class="col-md-4 col-sm-6">03</div>
+        </div>
+    </div>
+
+    <style>
+        .row > div{
+            border: 1px solid #000;
+            padding: 60px;
+        }
+        
+        /* 반응형 */
+        @media (min-width:768px) and (max-width:991px) {
+            body{background-color: rgb(255, 255, 61);}
+        }
+
+        @media (min-width:992px) and (max-width:1199px) {
+            body{background-color: aqua;}
+        }
+
+        @media (min-width:1200px) {
+            body{background-color: rgb(3, 165, 68);}
+        }
+        /* mobile */
+        @media (max-width:767px){
+            body{background-color: blueviolet;}
+        }
+    </style>
+</body>
+</html>

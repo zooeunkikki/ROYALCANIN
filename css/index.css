@@ -168,12 +168,24 @@ body{counter-reset: count;}
     font-size: 1.45rem;
 }
 .right-number>li{width: 25%;}
-.right-number>li>p{width: 220px; display: inline-block; vertical-align: middle;}
-.right-number>li>p>img{width: 100%;}
+.right-number>li>p{
+    width: 220px;
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+}
+.right-number>li>p>img{
+    width: 100%;
+    transition: 0.3s ease;
+}
+
+/* hover */
+.right-number>li>p>img:hover{transform: scale(1.1);}
 
 .right-number>li hgroup{display: flex; align-items: center; margin-bottom: 20px;}
 .right-number>li hgroup>h4{font-family: 'S-CoreDream-5Medium'; font-size: 1.45rem; margin-right: 20px;}
 .right-number>li hgroup>h4>span{font-family: 'S-CoreDream-3Light'; font-size: 1.1rem;}
+
 
 .right-number>li hgroup>h5{
     font-family: 'S-CoreDream-3Light';

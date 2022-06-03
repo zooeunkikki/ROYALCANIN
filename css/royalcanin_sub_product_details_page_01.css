@@ -1,0 +1,571 @@
+@charset "UTF-8";
+
+@import url('./common.css');
+
+/* main */
+main{
+    margin: 100px auto 0;
+    width: 1600px;
+    height: auto;
+}
+
+/* ================================================
+====================cushion============================
+================================================ */
+.cushion-130{margin-top: 130px;}
+.cushion-100{margin-top: 100px;}
+.cushion-80{margin-top: 80px;}
+.cushion-50{margin-top: 50px;}
+
+
+/* product */
+.main-box{}
+.product{
+    display: flex;
+}
+.product-img{}
+.product-img>p{
+    width: 640px; height: 640px;
+    overflow: hidden;
+    vertical-align: middle;
+}
+.product-img>p>img{width: 100%;}
+
+.select-box{
+    display: flex;
+    justify-content: center;
+}
+.select-box>p{
+    margin: 30px 0;
+    width: 100px; max-height: 100px; overflow: hidden;
+    vertical-align: middle;
+}
+
+.select-box>p:nth-of-type(1){
+    border: 1px solid #000;
+    margin-right: 20px;
+}
+
+.select-box>p>img{width:100%;}
+
+
+.product-review{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'S-CoreDream-3Light';
+    border:  1px solid #000;
+    border-left: none;
+    border-right: none;
+    padding: 30px 0;
+}
+.product-review>p{ margin: 0 10px;}
+
+.star{
+    vertical-align: middle;
+    margin: 0 30px;
+    display: inline-block;
+    width: 105px; height: 26px;
+    background: url('../image/icon/star_black.svg') center repeat-x;
+}
+.grade{font-size: 1.8rem;}
+.review-count{font-size: 1.1rem;}
+
+
+/* product-txt */
+.product-txt{
+    width: 710px;
+    margin-left: 100px;
+}
+.product-txt>p{
+    text-align: center;
+    width: 100px; height: 20px;
+    background-color: #D52521;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.product-txt>h3{
+    font-family: 'S-CoreDream-5Medium';
+    font-size: 1.8rem;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #000;
+    margin-bottom: 40px;
+}
+.product-txt>h2{
+    font-family: 'S-CoreDream-5Medium';
+    font-size: 2.9rem;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #000;
+}
+.product-txt>h2>span{font-family: 'S-CoreDream-3Light'; font-size: 2.1rem;}
+
+.product-txt>p:nth-of-type(2){
+    font-family: 'S-CoreDream-4Regular';
+    border: 1px solid #000;
+    border-left: none; border-right: none;
+    background-color: transparent;
+    color: #000;
+    text-align: left;
+    width: 100%; height: auto;
+    padding: 10px 0;
+    margin: 0;
+}
+
+
+/* coupon */
+.coupon{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: 'S-CoreDream-4Regular';
+}
+.coupon>p{ width: 30%; margin-bottom: 20px;}
+
+.red-txt{
+    font-family: 'S-CoreDream-5Medium';
+    color: #D52521;}
+.red-txt>span{font-family: 'S-CoreDream-3Light';}
+
+
+/* gray-box */
+.gray-box{
+    font-family: 'S-CoreDream-4Regular';
+    width:100%; 
+    background-color: #F2F2F2;
+    padding: 10px 0;
+}
+.gray-box>p{margin-top: 15px;}
+.gray-box>p>mark{background-color: transparent; color: #D52521;}
+.turck-box-logo{
+    padding: 5px 0 5px 15px;
+    width: 160px; height: 30px;
+    border-radius: 100px;
+    text-align: center;
+    background:url('../image/icon/in_transit.svg')10%  no-repeat;
+    background-size: 25px;
+    background-color: #FF9290;
+}
+
+/* shipping */
+.shipping{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.shipping>p{
+    margin-bottom: 15px;
+    font-family: 'S-CoreDream-4Regular';
+}
+
+.shipping>p:nth-of-type(odd){width: 20%;}
+.shipping>p:nth-of-type(even){width: 80%;}
+
+.shipping>p:nth-last-of-type(1){
+    width: 100%;
+    color: #838383;
+    margin-left: 20%;
+}
+
+/* check-box */
+.check-box{
+    width: 710px;
+    padding: 20px 10px;
+    background-color: #F2F2F2;
+}
+.check-box>p{
+    font-family: 'S-CoreDream-4Regular';
+    color: #6D6C6C;}
+
+.ch-flex{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ch-flex>p{
+    font-family: 'S-CoreDream-4Regular';
+    font-size: 1.3rem;
+}
+
+.count-box{
+    margin: 0; padding: 0;
+    display: flex;
+    border-collapse: collapse;
+}
+
+.count-box>button{
+    width: 33px; height: 30px;
+    font-family: 'S-CoreDream-4Regular';
+    border: 1px solid #8C8C8C;
+    background-color: #fff;
+}
+.count-box>input{  
+    font-family: 'S-CoreDream-4Regular';
+    color: #6D6C6C;
+    text-align: center;
+    width: 66px; height: 30px;
+    border: 1px solid #8C8C8C;
+    background-color: #fff;
+}
+
+
+/* Sum-txt */
+.Sum-txt{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+.Sum-txt>p{
+    font-size: 2rem;
+    margin-right: 20px;
+}
+.Sum-txt>h2{
+    font-family: 'S-CoreDream-5Medium';
+    font-size: 2.5rem;
+    color: #D52521;
+}
+.Sum-txt>h2>span{
+    font-size: 2rem;
+}
+
+
+/* btn-box */
+.btn-box{
+    margin-top: 40px;
+    display: flex;
+}
+.btn-box>button{
+    margin: 0;
+    border: 0;
+    width: 320px; height: 70px;
+    padding: 10px;
+    color: #fff;
+    font-size: 1.8rem;
+    font-family: 'S-CoreDream-5Medium';
+}
+.btn-box>button:nth-of-type(1){
+    background-color: #000;
+    transition: 0.3s ease; 
+}
+
+.btn-box>button:nth-of-type(2){
+    background-color: #D52521;
+    transition: 0.3s ease; 
+}
+.btn-box>button:nth-of-type(3){
+    padding: 20px; width: 70px; height: 70px;
+    background-color: #fff;
+    border: 1px solid #000;
+    background: url('../image/icon/heart_black.svg')center no-repeat;
+    background-size: 31px;
+    transition: 0.3s ease; 
+}
+
+/* active */
+.btn-box>button:nth-of-type(1):active{
+    background-color: #fff;
+    color: #000;
+    border: 3px solid #000;
+}
+
+.btn-box>button:nth-of-type(2):active{
+    color: #D52521;
+    background-color: #fff;
+    border: 3px solid #D52521;
+}
+
+.btn-box>button:nth-of-type(3):active{
+    border: 3px solid #D52521;
+    background: url('../image/icon/full_red_heart.svg')center no-repeat;
+    background-size: 31px;
+    
+    
+}
+
+/* event-vanner */
+.event-vanner{
+    display: block;
+    width: 100%; height: 130px;
+    color: #676767;
+    padding: 20px 200px;
+    background: url('../image/vanner/royalcanin_sub_product_details_page/gift.png')95%  no-repeat;
+    background-size: 100px;
+
+    background-color: #FFF6D7;
+}
+.event-vanner>p{
+    font-size: 1.3rem;
+    font-family: 'S-CoreDream-3Light';
+}
+.event-vanner>h3{
+    font-family: 'S-CoreDream-6Bold';
+    font-size: 1.7rem;
+}
+
+
+
+/* product-recommend */
+.product-recommend{}
+.reco-txt{
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #000;
+}
+.reco-txt>h3{
+    font-family: 'S-CoreDream-5Medium';
+    font-size: 1.3rem;
+}
+.reco-txt>a{
+    font-family: 'S-CoreDream-3Light';
+    font-size: 0.9rem;
+    margin-left: 20px;
+    padding-right: 20px;
+
+    background: url('../image/icon/arrow_black.png')100% no-repeat;
+    background-size: 14px;
+}
+
+.product-recommend>ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.product-recommend>ul>li{}
+.product-recommend>ul>li>p:nth-of-type(1){
+    width: 260px; height: 200px;
+    background-color: #676767;
+    margin-bottom: 10px;
+}
+.product-recommend>ul>li>p>img{width: 100%;}
+.product-recommend>ul>li>p:nth-of-type(2){
+    font-family: 'S-CoreDream-3Light';
+    font-size: 0.9rem;
+}
+
+.reco-price{
+    font-family: 'S-CoreDream-5Medium';
+    font-size: 1.5rem;}
+.reco-price>span{
+    font-family: 'S-CoreDream-3Light';
+    font-size: 1.1rem;
+}
+
+
+/* ================================================
+================product-detail======================
+================================================ */
+.product-detail{
+    width: 1600px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ================================================
+================left-box================================
+================================================ */
+.left-box{
+    margin: 0;
+    width: 1145px;
+    
+    /* 임시 */
+    height: auto;
+
+}
+
+.left-product-btn{
+    display: flex;
+}
+.left-product-btn>button{
+    width: 382px; height: 60px;
+    padding: 14px 60px;
+    font-family: 'S-CoreDream-5Medium';
+    font-size: 1.45rem;
+    border: 1px solid #000;
+    border-collapse: collapse;
+    background-color: #fff;
+    transition: 0.3 ease; 
+}
+
+.left-product-btn>button:nth-of-type(1){
+    background-color: #000;
+    border: none;
+    color: #fff;
+    transition: 0.3 ease; 
+
+}
+
+/* active */
+.left-product-btn>button:nth-of-type(1):active{
+    background-color: #fff;
+    border: 2px solid rgb(0, 0, 0);
+    color: #000;
+}
+
+.left-product-btn>button:active{
+    background-color: #000;
+    border: 2px solid #fff ;
+    color: #fff;
+
+}
+
+
+/*detail-txt*/
+.detail-txt{}
+.detail-txt>h3{
+    font-family: 'S-CoreDream-5Medium';
+    font-size: 1.75rem;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #000;
+}
+.detail-txt>p{
+    padding-top: 20px;
+    padding-bottom: 50px;
+    font-family: 'S-CoreDream-3Light';
+    border-bottom: 5px solid #000;
+}
+
+/* img-detail */
+.img-detail{}
+.img-detail-txt{
+    text-align: center;
+}
+.img-detail-txt>h2{
+    font-family: 'S-CoreDream-6Bold';
+    font-size: 3.6rem;
+}
+.img-detail-txt>h2>span{
+    font-family: 'S-CoreDream-6Bold';
+    font-size: 4.3rem;
+    color: #B8B8B8;
+}
+.img-detail-txt>p{
+    font-family: 'S-CoreDream-6Bold';
+    white-space: pre-line;
+}
+
+
+.img-detail>p{vertical-align: middle;}
+.img-detail>p>img{width: 100%;}
+
+
+
+/* ============================================================
+==================right-count-box==============================
+================================================ */
+
+.right-count-box{
+    position: relative;
+    width: 350px;
+    height: auto;
+}
+
+.right-box{
+    position: sticky;
+    right: 0; top: 0;
+    width: 350px;
+}
+
+/* right-check-box */
+
+.right-check-box{
+    padding: 20px 10px;
+    width: 350px; height: 320px;
+    border: 1px solid #777;
+}
+.right-check-box>p{
+    font-family: 'S-CoreDream-4Regular';
+    color: #666666;
+}
+
+.right-check-box>.right-flex{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right-count-check-box{
+    display: flex;
+    align-items: center;
+    border-collapse: collapse;
+}
+.right-count-check-box>button{
+    width: 33px; height: 28px;
+    font-family: 'S-CoreDream-4Regular';
+    border: 1px solid #8C8C8C;
+    background-color: #fff;
+}
+.right-count-check-box>input{
+    width: 66px; height: 28px;
+    font-family: 'S-CoreDream-4Regular';
+    color: #6D6C6C;
+    text-align: center;
+    border: 1px solid #8C8C8C;
+    background-color: #fff;
+}
+
+.right-flex>p{
+    color: #000;
+    font-family: 'S-CoreDream-4Regular';
+font-size: 1.45rem;}  
+
+
+/* right-btn-box */
+.right-btn-box{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.right-btn-box>button{
+    margin: 0;
+    border: 0;
+    padding: 5px;
+    color: #fff;
+    font-size: 1.8rem;
+    font-family: 'S-CoreDream-5Medium';
+}
+.right-btn-box>button:nth-of-type(1){
+    font-size: 1.4rem;
+    width: 350px; height: 43px;
+    background-color: #000;
+    margin-bottom: 15px;
+    transition: 0.3s ease; 
+}
+
+.right-btn-box>button:nth-of-type(2){
+    width: 280px; height: 70px;
+    background-color: #D52521;
+    transition: 0.3s ease; 
+}
+.right-btn-box>button:nth-of-type(3){
+    padding: 20px; width: 70px; height: 70px;
+    background-color: #fff;
+    border: 1px solid #000;
+    background: url('../image/icon/heart_black.svg')center no-repeat;
+    background-size: 31px;
+    transition: 0.3s ease; 
+}
+
+/* active */
+.right-btn-box>button:nth-of-type(1):active{
+    background-color: #fff;
+    color: #000;
+    border: 3px solid #000;
+}
+
+.right-btn-box>button:nth-of-type(2):active{
+    color: #D52521;
+    background-color: #fff;
+    border: 3px solid #D52521;
+}
+
+.right-btn-box>button:nth-of-type(3):active{
+    border: 3px solid #D52521;
+    background: url('../image/icon/full_red_heart.svg')center no-repeat;
+    background-size: 31px;   
+}

@@ -1,13 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>royalcanin_sub_9_shopping_basket</title>
-    <link href="" rel="stylesheet">
+    <link href="./css/royalcanin_sub_9_shopping_basket.css" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="./image/logo/favicon-16x16.png" sizes="16x16" />
 </head>
+
 <body>
-    
+    <!-- header -->
+    <header>
+        <div>
+            <div class="head-1">
+                <h1><a href="./index.html">ROYALCANIN</a></h1>
+
+
+
+                <div class="search">
+                    <input type="text">
+                    <a href=""><img src="./image/icon/magnifying_glass.png" alt=""></a>
+                </div>
+
+                <ul>
+                    <li>
+                        <a href="./royalcanin_sub_11_login.html"
+                            onclick="window.open(this.href, '_blank',
+                        'width=763, height=530, top=200, left=600,toolbar=no, menubar=no,srollbars=no,scrollbars=no'); return false;">로그인</a>
+                        <a href="">회원가입</a>
+                    </li>
+
+                    <li>
+                        <a href=""><img src="./image/icon/my.png" alt="my"></a>
+                        <a href=""><img src="./image/icon/heart.png" alt="heart"></a>
+                        <a href=""><img src="./image/icon/cart.png" alt="cart"></a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- main -->
+    <main>
+        <div class="main-box">
+            <div class="left-box">
+                <div class="headline">
+                    <h2>장바구니</h2>
+                    <div class="headline-flex">
+                        <div class="select-box">
+                            <input type="checkbox">
+                            <a href="">전체선택</a>
+                        </div>
+                        <div class="select-choice">
+                            <a href="">품절상품선택</a>
+                            <a href="">선택삭제</a>
+                            <a href="">전체삭제</a>
+                        </div>
+                    </div>
+                </div><!-- head-line -->
+                <div class="same-day-delivery">
+                    <div class="select-box-2">
+                        <input type="checkbox">
+                        <a href="">당일배송 상품: 2개</a>
+                    </div>
+                    <a href=""></a>
+                </div><!-- same-day-delivery -->
+                <div class="delivery-box">
+                    <div class="yellow-box">
+                        <p>16시까지 결제 시 오늘 바로 발송됩니다.</p>
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="product-img">
+                                <input type="checkbox">
+                                <p><img src="./image/cat/dry_feed/indoor/indoor_thumbnail_03.jpg" alt="indoor"></p>
+                            </div>
+
+                            <p>로얄캐닌 건식 사료 인도어 800g</p>
+
+                            <div class="product-check">
+                                <div class="product-price">
+                                    <h3>6,830<span>원</span></h3>
+                                    <p>6,900원</p>
+                                </div>
+                                <div class="count-box">
+                                    <button>-</button>
+                                    <input type="text" name="check-box" value="1">
+                                    <button>+</button>
+                                </div>
+                            </div>
+
+                            <div class="coupon">
+                                <a href="">쿠폰할인</a>
+                            </div>
+
+                            <div class="same-day-btn">
+                                <button>정기배송 담기</button>
+                                <button>주문 수정하기</button>
+                                <div class="btn-icon">
+                                    <a href=""></a>
+                                    <a href=""></a>
+                                </div>
+                            </div>
+                        </li><!-- li1 -->
+                        <li class="gray-box">
+                            <h3>6,900원 + 배송비 0원 - 쿠폰할인 70원 = 6,830원<span> (무료배송 상품)</span></h3>
+                        </li><!-- li2 -->
+                        <li>
+                            <div class="product-img">
+                                <input type="checkbox">
+                                <p><img src="./image/cat/wet_feed/beauty/beauty_thumbnail_01.jpg" alt="beauty"></p>
+                                <p>품절</p>
+                            </div>
+
+                            <p>로얄캐닌 습식 사료 뷰티케어 85g</p>
+
+                            <div class="product-check">
+                                <div class="product-price">
+                                    <h3>1,250<span>원</span></h3>
+                                    <p>6,900원</p>
+                                </div>
+                                <div class="count-box">
+                                    <button>-</button>
+                                    <input type="text" name="check-box" value="1">
+                                    <button>+</button>
+                                </div>
+                            </div>
+
+                            <div class="coupon">
+                                <a href="">쿠폰할인</a>
+                            </div>
+
+                            <div class="same-day-btn">
+                                <button>대체상품</button>
+                                <button>입고알림</button>
+                                <div class="btn-icon">
+                                    <a href=""></a>
+                                    <a href=""></a>
+                                </div>
+                            </div>
+                        </li><!-- li3 -->
+                    </ul>
+                </div><!-- delivery-box -->
+                <div class="cushion-80"></div>
+                <div class="normal-delivery">
+                    <div class="select-box-2">
+                        <input type="checkbox">
+                        <a href="">일반배송 상품: 1개</a>
+                    </div>
+                    <a href=""></a>
+                </div><!-- normal-delivery -->
+
+                <div class="normal-delivery-box">
+                <!-- ul&li -->
+                <ul>
+                    <li>
+                        <div class="product-img">
+                            <input type="checkbox">
+                            <p><img src="./image/cat/wet_feed/kitten/kitten_thumbnail_02.jpg" alt="kitten"></p>
+                        </div>
+
+                        <p>로얄캐닌 습식 사료 키튼 85g</p>
+
+                        <div class="product-check">
+                            <div class="product-price">
+                                <h3>1,250<span>원</span></h3>
+                                <p>6,900원</p>
+                            </div>
+                            <div class="count-box">
+                                <button>-</button>
+                                <input type="text" name="check-box" value="1">
+                                <button>+</button>
+                            </div>
+                        </div>
+
+                        <div class="coupon">
+                            <a href="">쿠폰할인</a>
+                        </div>
+
+                        <div class="same-day-btn">
+                            <button>정기배송 담기</button>
+                            <button>주문 수정하기</button>
+                            <div class="btn-icon">
+                                <a href=""></a>
+                                <a href=""></a>
+                            </div>
+                        </div>
+                    </li><!-- li1 -->
+                    <li class="gray-box">
+                        <h3>1,250원 + 배송비 3,000원 = 4,250원<span>  (3만원이상 무료배송)</span></h3>
+                        <a href="">배송비SAVE 상품보기</a>
+                    </li><!-- li2 -->
+                </ul>
+                </div>
+                
+                <div class="cushion-80"></div>
+
+                <div class="vanner">
+                    <a href="">이벤트 배너_1</a>
+                    <a href="">이벤트 배너_2</a>
+                </div>
+
+                <div class="cushion-100"></div>
+
+                <div class="product-information">
+                <h3>장바구니 상품 안내</h3>
+                <p>장바구니 상품은 <span>최대 30일간</span>저장됩니다.</p>
+                <p>가격, 옵션 등 정보가 변경된 경우 주문이 불가할 수 있습니다.</p>
+                <p>오늘출발 상품은 판매 설정 시점에 따라 출발 여부가 변경될 수 있으니 주문 시 꼭 다시 확인해 주시기 바랍니다.</p>
+                </div>
+                <div class="cushion-200"></div>
+            </div><!-- left-box -->
+
+            <!-- right-box -->
+            <div class="right-box">
+                <div class="sticky">
+                    <div class="location">
+                        <div class="loca">
+                            <p>기본배송지: 자취방</p>
+                            <p>[01234] 서울광역시 동대문구 ㅇㅇ로 04-11,
+                                로뎀빌 나동 603호 (ㅁㅁ동)</p>
+                            <div class="loca-btn">
+                                <button>배송지 변경</button>
+                                <button>여러곳으로 배송</button>
+                            </div>
+                        </div>
+
+                        <div class="shopping_sum">
+                            <p>전체상품: 1개</p>
+                            <div class="cushion-90"></div>
+                            <div class="shopping_sum_txt">
+                                <p>주문금액</p>
+                                <p>6,900원</p>
+                                <p>할인상품</p>
+                                <p>-70원</p>
+                                <p>배송비</p>
+                                <p>+ 0원</p>
+                                <span></span>
+                            </div>
+                            <div class="sum">
+                                <p>결제예정금액</p>
+                                <h2>6,830<span>원</span></h2>
+                            </div>
+                            <div class="shopping-btn">
+                                <button>주문하기</button>
+                                <button>선물하기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- right-box -->
+        </div><!-- main-box -->
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div class="ab-line">
+            <div class="about">
+                <a href="">About</a>
+                <a href="">Terms of use</a>
+                <a href="">Privacy Policy</a>
+            </div>
+        </div>
+
+        <div class="footer-flex">
+            <div>
+                <p class="ppink">CUSTOMER CENTER</p>
+                <p class="call">070-4047-3133</p>
+                <p>고객센터 운영시간: 10:00 ~ 17:00
+                    점심시간 12:00 ~ 13:00 / 주말 및 공휴일 휴무
+                </p>
+            </div>
+
+            <div>
+                <p class="ppink">COMPANY INFO</p>
+                <p>로얄캐닌코리아
+                    대표: 실비아제인버베리
+                    주소:서울시 강남구 테헤란로 534 글라스타워 7층
+                    TEL. 080-041-5161 FAX. 02-569-8886
+                    사업자등록번호: 135-81-80712
+                    이메일문의 : info.kr@royalcanin.com
+                    COPYRIGHTⓒ2014ROYAL CANIN SAS ALL RIGHT RESERVED.3</p>
+            </div>
+
+            <div>
+                <p class="ppink">SOCIAL MEDIA</p>
+                <figure>
+                    <a href="https://ko-kr.facebook.com/RoyalCanin.kr/">facebook</a>
+                    <a href="">instagram</a>
+                    <a href="https://www.youtube.com/c/RoyalCaninKorea">youtube</a>
+                </figure>
+            </div>
+        </div>
+
+    </footer>
 </body>
+
 </html>

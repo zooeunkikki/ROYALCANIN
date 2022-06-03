@@ -76,23 +76,22 @@ header>div .head-1 h1>a{
 }
 
 /* search */
-.search{
-    /* position: absolute;
-    left: 35%; top:4%;
-    transform: translate(10%,0%); */
-}
+.search{}
 header div .search>input{
     width: 550px;
-    padding: 0 2px 5px;
+    padding: 0 40px 5px 2px;
     border: none; border-bottom: 2px solid #D52521;
     outline:none;
+    background-color: transparent;
 }
-header div .search>input:nth-child(2){
-    width: 26px; height: 26px;
-    border: 0; outline: 0;
-    background: url('../image/icon/magnifying_glass.png') center / cover no-repeat ; 
-    transform: translate(-35px);
+header div .search>a{
+    display: inline-block;
+    width: 30px;
+    vertical-align: middle;
+    transform: translate(-40px,-5px);
 }
+header div .search>a>img{width:100%;vertical-align: middle; }
+
 
 /* login & icon */
 header div>ul{
@@ -154,9 +153,7 @@ header div nav>span>a>span{
 header div nav>span:hover>.burger{display: flex;}
 
 
-.burger a{
-    
-}
+.burger a{}
 .burger >.category{
     display: flex; flex-direction: column; width: 20%;
 }
