@@ -31,7 +31,6 @@ main{
 /* vanner-img */
 .van-btn-1{
     position: absolute;
-    width: 100%;
     left: 10%; top: 25%;
 }
 
@@ -49,7 +48,7 @@ main{
 .van-btn-1>a:nth-child(2){
     position: absolute;
     left: 20%; top: 0%;
-    transform: translate(-30%,303%);
+    transform: translate(230%,303%);
     text-align: center;
     width: 122px; height: 122px;
     background-color: #EC6351;

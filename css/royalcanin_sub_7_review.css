@@ -41,7 +41,7 @@ main{
     content: '';
     display: inline-block;
     width: 242px; height: 69px;
-    background: url('../image/vanner/review/review_vector.svg')no-repeat;
+    background: url('../image/vanner/review/review_vector.svg')no-repeat;   
     opacity: 0.5;
 }
 .vanner-head>h2{
@@ -97,6 +97,8 @@ main{
 .md-box{
     width: 1280px;
     margin: 0 auto;
+    /* 임시 */
+    background-color: #FFCC9D;
 }
 .review-headline{}
 .review-headline>h3::before{
@@ -104,7 +106,8 @@ main{
     display: block;
     width: 400px;
     border-top: 1px solid #FF5151;
-    margin: 0; 
+    margin: 0;
+    transform: translate(-500px, 20px); 
 }
 
 .review-headline>h3{
@@ -123,6 +126,7 @@ main{
     display: block;
     width: 400px;
     border-top: 1px solid #FF5151;
+    transform: translate( 380px, -20px); 
 }
 
 
