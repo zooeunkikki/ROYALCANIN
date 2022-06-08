@@ -9,12 +9,12 @@ main{
     width: 1600px;
     background: url('../image/bg/homepage_bg.png')no-repeat;
     /* 임시 */
-    height: 1000vh;
-    border: 1px solid #000;
+    height: auto;
 }
 /* ===================================
 =========cushion==========================
 =================================== */
+.cushion-200{margin-top: 200px;}
 .cushion-100{margin-top: 100px;}
 .cushion-60{margin-top: 60px;}
 .cushion-70{margin-top: 70px;}
@@ -140,18 +140,22 @@ main{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 .md-box>ul>li{
     position: relative;
-    width: 30%;}
+    width: 30%;
+    margin-bottom: 80px;}
 
+/*rank*/
 body{counter-reset: count;}
+
 .md-box>ul>li>p::before{
+    display: inline-block;
     text-align: center;
     counter-increment: count;
     content: ""counter( count, decimal-leading-zero)"";
     position: absolute;
-    display: inline-block;
     top: 5%;
     right: 10%;
     width: 70px;
@@ -162,6 +166,22 @@ body{counter-reset: count;}
     color: #fff;
     font-size: 2.8rem;
     z-index: 1;
+}
+
+.md-box>ul>li:nth-of-type(n+4):nth-of-type(-n+9)>p::before{
+    display: inline-block;
+    text-align: center;
+    counter-increment: count;
+    content: ""counter( count, decimal-leading-zero)"";
+    top: 5%;
+    right: 10%;
+    width: 70px;
+    height: 70px;
+    background-color: #654BFF;
+    border-radius: 0 100px 100px 100px;
+    font-family: 'S-CoreDream-8Heavy';
+    color: #fff;
+    font-size: 2.8rem;
 }
 
 .md-box>ul>li>p{
@@ -180,7 +200,7 @@ body{counter-reset: count;}
 }
 .md-box>ul>li>div>p{
     font-family: 'S-CoreDream-3Light';
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 
 
@@ -188,3 +208,46 @@ body{counter-reset: count;}
 /* ===================================
 ===================================
 =================================== */
+
+/* ========================================================
+================BTN========================================
+======================================================== */ 
+/* btn */
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn> button{
+    font-family: 'S-CoreDream-3Light';
+    font-size: 0.86rem;
+    width: 30px; height: 30px;
+    border: 1px solid #777;
+    background-color: #fff;
+    margin: 0 5px;
+}
+
+.btn button:nth-child(1){
+    background-color: #000;
+    color: #fff;
+}
+
+/* > & >> */
+.btn button:nth-child(n+3):nth-child(-n+4){
+    background-color: #EFEFEF;
+}
+
+/* bg */
+.btn button:nth-child(3){
+    display: inline-block;
+    font-size: 0;
+    background: url('../image/icon/arrow_gray.png')no-repeat;
+    background-size: 25px;
+}
+
+.btn button:nth-child(4){
+    display: inline-block;
+    font-size: 0;
+    background: url('../image/icon/Double_arrow_gray.png')center no-repeat;
+    background-size: 35px;
+}

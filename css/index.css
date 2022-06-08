@@ -5,12 +5,12 @@
 
 
 
-main{width: 100%; height: auto;}
+main{width: 100%;}
 
 .main-box{
     position: relative;
     width: 1600px;
-    height: 100%;
+    height: 4000px;
     margin: 100px auto 0;
     /* border: 1px solid #777; */
 }
@@ -18,9 +18,14 @@ main{width: 100%; height: auto;}
 .left-box{
     position: sticky;
     display: inline-block;
-    top: 0;
+    top: 0; left: 0;
     width: 400px;
     /* background-color: antiquewhite; */
+}
+.left-box::after{
+    content: '';
+    display: block;
+    margin-bottom: 250px;
 }
 
 .main-box>.left-box>ul{}
