@@ -17,6 +17,7 @@ main{
 =================================== */
 .cushion-100{margin-top: 100px;}
 .cushion-60{margin-top: 60px;}
+.cushion-70{margin-top: 70px;}
 
 
 
@@ -97,10 +98,15 @@ main{
 .md-box{
     width: 1280px;
     margin: 0 auto;
-    /* 임시 */
-    background-color: #FFCC9D;
 }
-.review-headline{}
+.review-headline{
+    text-align: center;
+}
+.review-headline>p{
+    display: inline-block;
+    width: 35px; height: 35px;
+    background: url('../image/icon/pink_crown.png')no-repeat;
+}
 .review-headline>h3::before{
     content: '';
     display: block;
@@ -129,8 +135,53 @@ main{
     transform: translate( 380px, -20px); 
 }
 
+/* review-box */
+.md-box>ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.md-box>ul>li{
+    position: relative;
+    width: 30%;}
 
+body{counter-reset: count;}
+.md-box>ul>li>p::before{
+    text-align: center;
+    counter-increment: count;
+    content: ""counter( count, decimal-leading-zero)"";
+    position: absolute;
+    display: inline-block;
+    top: 5%;
+    right: 10%;
+    width: 70px;
+    height: 70px;
+    background-color: #FF3B3B;
+    border-radius: 0 100px 100px 100px;
+    font-family: 'S-CoreDream-8Heavy';
+    color: #fff;
+    font-size: 2.8rem;
+    z-index: 1;
+}
 
+.md-box>ul>li>p{
+    border-radius: 20px;
+    vertical-align: top;
+    width: 365px; max-height: 365px;
+    overflow: hidden;
+}
+.md-box>ul>li>p>img{width: 100%;}
+
+.md-box>ul>li>div{
+    margin-top: 10px;
+}
+.md-box>ul>li>div>h3{
+    font-family: 'S-CoreDream-4Regular';
+}
+.md-box>ul>li>div>p{
+    font-family: 'S-CoreDream-3Light';
+    font-size: 0.8rem;
+}
 
 
 
