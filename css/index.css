@@ -31,7 +31,7 @@ main{width: 100%;}
 .main-box>.left-box>ul{}
 .main-box>.left-box>ul>li{}
 .main-box>.left-box>ul>li>p:nth-child(1){width: 400px;}
-.main-box>.left-box>ul>li>p:nth-child(2){}
+.main-box>.left-box>ul>li>p:nth-child(2){font-family: 'S-CoreDream-3Light';}
 .main-box>.left-box>ul>li>p>img{width:100%; vertical-align: middle;}
 .main-box>.left-box>ul>li>p>span{}
 
@@ -46,8 +46,12 @@ main{width: 100%;}
 
 
 .click{}
-.click>h2{font-family: 'S-CoreDream-7ExtraBold'; font-size: 2rem;
-    margin-bottom: 20px;}
+.click>h2{
+    font-family: 'S-CoreDream-7ExtraBold';
+    font-size: 2rem;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
 .click>h2::after{
     content: '';
     display: inline-block;

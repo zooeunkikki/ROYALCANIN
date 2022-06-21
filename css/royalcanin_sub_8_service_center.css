@@ -208,7 +208,7 @@ main{
     font-size: 1.1rem;
 }
 /* hover */
-.qna-box>li:active .qna-A{display:block;}
+.qna-box>li.active .qna-A{display:block;}
 
 /* qna-btn */
 .qna-btn{
@@ -269,4 +269,60 @@ main{
 .service_call>div>p>span{
     font-size: 0.7rem;
     padding-left: 10px;
+}
+
+/* ===pop=====================================
+=================================================
+=================================================
+================================================= */
+
+.pop{
+    position:fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+}
+
+.pop.active{display: flex;}
+
+.rank-pop{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.rank-pop li{
+    position: relative;
+    width: 100%;
+    height: 80%;
+    padding: 50px 30px;
+    /* padding-right: 100px; */
+    background-color: #fff;
+    margin: 10% auto;
+}
+.rank-pop li div{
+    
+    font-family: 'S-CoreDream-4Regular';
+}
+.rank-pop li div h3{
+    font-size: 1.7rem;
+}
+.rank-pop li div a{
+    position: absolute;
+    top: 2%; right: 2%;
+    display: inline-block;
+    font-size: 2rem;
+    width: 38px; height: 38px;
+    background: url('../image/icon/popup_x.svg')center no-repeat;
+}
+.rank-pop li div p{
+    margin-top: 30px;
+    font-size: 1.1rem;
+    white-space: pre-line;
 }
