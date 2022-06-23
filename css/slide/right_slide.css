@@ -115,3 +115,16 @@
     margin: 0 5px;
     font-size: 0;
 }
+
+
+@media (max-width:767px){
+    .right-slide{
+        width: 100%;
+    }
+
+    .right-slide figure {
+        margin: 0;
+        width: 80%;
+        flex-shrink: 0;
+    }
+}

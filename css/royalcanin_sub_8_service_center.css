@@ -158,6 +158,7 @@ main{
     color: #000;
     display: block;
     padding: 20px 50px;
+    transition: 0.1s ease;
 }
 
 /* hover */
@@ -166,6 +167,8 @@ main{
     background-color: #000;
 }
 .fna-subject:hover{color: #fff;}
+
+.fna-subject.active{color: #fff;background-color: #000;}
 
 /* qna */
 .qna{}
@@ -284,12 +287,14 @@ main{
     height: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
     background-color: rgba(0, 0, 0, 0.6);
     display: none;
 }
 
 .pop.active{display: flex;}
 
+/* ul */
 .rank-pop{
     width: 100%;
     height: 100%;
@@ -299,16 +304,20 @@ main{
 }
 .rank-pop li{
     position: relative;
-    width: 100%;
-    height: 80%;
+    width: 40%;
+    height: 70%;
     padding: 50px 30px;
-    /* padding-right: 100px; */
+    /* padding-right: 80px; */
     background-color: #fff;
-    margin: 10% auto;
+    margin: 7% auto;
+    display: none;
 }
+
+.rank-pop li.active{display: block;}
+
 .rank-pop li div{
-    
     font-family: 'S-CoreDream-4Regular';
+    margin-bottom: 10%;
 }
 .rank-pop li div h3{
     font-size: 1.7rem;
@@ -322,7 +331,7 @@ main{
     background: url('../image/icon/popup_x.svg')center no-repeat;
 }
 .rank-pop li div p{
-    margin-top: 30px;
+    margin-top: 50px;
     font-size: 1.1rem;
     white-space: pre-line;
 }

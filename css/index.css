@@ -3,8 +3,6 @@
 @import url('./common.css');
 
 
-
-
 main{width: 100%;}
 
 .main-box{
@@ -80,7 +78,7 @@ main{width: 100%;}
     height: 100%;
     float: right;
     /* background-color: antiquewhite; */
-    background: url('../image/bg/homepage_bg.png')10% 10%/ 80% repeat-y;
+    background: url('../image/bg/homepage_bg.png')10% 0%/ 80% repeat-y;
 }
 
 /* right-silde */
@@ -202,7 +200,7 @@ body{counter-reset: count;}
     background: url('../image/vanner/right-bg.png') no-repeat;
     background-color: #FCD8CD;
     background-size: 647px;
-    background-position: 10% -10%;    
+    /* background-position: 10% -10%;     */
 }
 
 /* 버튼 */
@@ -275,9 +273,9 @@ body{counter-reset: count;}
 .ri-vi-box>li>figure{
     margin: 20px;
     margin-left: 30px;
-    width: 185px; vertical-align: middle;}
+    width: 185px; vertical-align: top;}
 .ri-vi-box>li>figure>img{
-    vertical-align: middle;
+    vertical-align: top;
     width: 100%; max-height: 185px;
     border-radius: 10px;}
 .ri-vi-box>li>figure>figcaption>h4{
@@ -308,6 +306,20 @@ body{counter-reset: count;}
 .nickname>p:nth-child(2){padding-right: 0;}
 
 
+/* btn-active-js */
+.ri-slide{display: none;}
+.ri-slide2{display: none;}
+.ri-slide.active{display: block;}
+.ri-slide2.active{display: flex;}
+
+.check-slide{ display: none;}
+.check-slide2{ display: none;}
+.check-slide.active{ display: block;}
+.check-slide2.active{ display: flex;}
+.right-review.bgcolor{background-color: #cadeff;}
+
+
+
 
 /* ==============================반응형=================================
 ===================================================================================
@@ -316,3 +328,47 @@ body{counter-reset: count;}
 ===================================================================================
 =================================================================================== */
 
+/* mobile */
+@media (max-width:767px){
+    header{display: none;}
+    .main-box{
+        width: 100%;
+        margin: 10% auto;
+    }
+    .left-box{display: none;}
+    .right-box{
+        width: 80%;
+        float: none;
+        background: url('../image/bg/homepage_bg.png')center 100% repeat-y;
+    }
+
+    /* 1st-ul */
+    .right-sale{margin-top: 5%; justify-content: space-between;}
+    .right-sale li{width: 45%;}
+    .right-sale>li>a{width: 90%; border-radius: 5%; overflow: hidden;} 
+    .right-sale>li>a>img{vertical-align: top;}
+
+    /* .r-sale-txt */
+    /* .r-sale-txt{font-size: 2rem;}
+    .right-sale h4{font-size: 3rem;}
+    .right-sale h4>span{font-size: 2rem;} */
+
+    /* right-btn */
+    .right-btn>a{
+        font-size: 2rem;
+        background: url('../image/icon/arrow_black.png') 90% / 15% no-repeat;
+    }
+
+}
+
+
+
+/* PAD */
+/* @media (min-width:768px) and (max-width:1023px) {
+    body{background-color: rgb(255, 255, 61);}
+} */
+
+/* WEB */
+/* @media (min-width:1024px) {
+    body{background-color: rgb(3, 165, 68);}
+} */
