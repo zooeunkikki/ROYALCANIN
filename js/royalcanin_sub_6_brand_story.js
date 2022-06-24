@@ -1,7 +1,33 @@
 //scroll
 const btnA = document.querySelectorAll('.brand-btn a');
+let asideMotion = document.querySelector('.aside-btn');
 const asideBtn = document.querySelectorAll('.aside-btn a');
 let brandBox = document.querySelectorAll('.brand-history');
+
+// console.log(brandBox[2].offsetTop)
+// console.log(window.scrollY)
+// console.log(window.innerHeight)
+//현재 보여지는 뷰 포인트 높이
+//console.log(window.innerHeight)
+
+function scrollFun(){
+    window.addEventListener('scroll',function(){
+        let maxScrollValue = document.body.offsetHeight - window.innerHeight;
+        const scrollPer = (pageYOffset / maxScrollValue)* 100;
+        // console.log(maxScrollValue)
+        // console.log(scrollPer)
+    
+        if(scrollPer>=35.2){
+            asideMotion.classList.add('active');
+        }
+        else{ asideMotion.classList.remove('active');}
+        //console.log(scrollPer>=35.2)
+    });
+
+
+};
+
+scrollFun();
 
 function pageFun(){
 let i = 0;
@@ -11,23 +37,31 @@ btnA.forEach(function(btn,v){
             event.preventDefault();
             btnA[i].classList.remove('active');
             btnA[v].classList.add('active');
-            i=v;
+            asideBtn[i].classList.remove('active');
+            asideBtn[v].classList.add('active');
             brandBox[v].scrollIntoView({behavior:'smooth'})
+            i=v;
+            console.log(i==v)
         });
-        
+    
     asideBtn[v].addEventListener('click',function(){
+        oxo = i;
         event.preventDefault();
-        asideBtn[oxo].classList.remove('active');
+        asideBtn[i].classList.remove('active');
         asideBtn[v].classList.add('active');
-        oxo=v;
+        btnA[i].classList.remove('active');
+        btnA[v].classList.add('active');
+        
         brandBox[v].scrollIntoView({behavior:'smooth'})
+        i=v;
+        console.log(i==v)
     });
     });
 };
 
 pageFun();
 
-//asidebtn ++
+
 
 
 
