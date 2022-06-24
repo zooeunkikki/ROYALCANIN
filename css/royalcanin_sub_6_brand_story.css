@@ -52,7 +52,7 @@ main{
 /* ====================================================================
 =======================cushion=================================
 ==================================================================== */
-
+.cushion-60{margin-top: 60px;}
 .cushion-110{margin-top: 110px;}
 .cushion-170{margin-top: 170px;}
 .cushion-320{margin-top: 320px;}
@@ -102,19 +102,64 @@ main{
 
 
 /* 현재 보여지는 모습 구현 */
-.brand-btn>a:nth-of-type(6){
+.brand-btn>a.active{
     color: #000;
 }
-.brand-btn>a:nth-of-type(6)::after{
+.brand-btn>a.active::after{
+    content: '';
+    display: block;
+    width: 20px; height: 20px;
+    border-radius: 50px;
     background-color: #000;
+    margin: 20px auto 0;
 }
+
+/* ====================================================================
+==================== aside   ==========================================
+======================================================================== */
+
+.aside-btn{
+    position: fixed;
+    top: 45%; right: 5%;
+}
+.aside-btn a{
+    display: block;
+    width: 12px; height: 12px;
+    border-radius: 50px;
+    background-color: rgb(194, 205, 255);
+    margin: 15px auto;
+}
+
+.aside-btn a.active{ background-color: rgb(147, 163, 255);}
+
+
+
 
 
 /* ====================================================================
 ==================================================================== */
 
 /* brand-history */
-.brand-history{}
+
+/* scrollbox박스 역할 */
+.brand-history:nth-of-type(n+1):nth-of-type(-n+6){
+    padding-top: 0%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand-history{
+    padding-top: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
 .brand-history>ul{}
 .brand-history>ul>li{ margin-bottom: 200px;}
 

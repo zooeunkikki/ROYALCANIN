@@ -20,7 +20,7 @@ function h4_change(){
     `;
     H4.style = "color:#06337C";
     PinkBox.classList.add('bgcolor');
-    pink_slide.style  = "background-color:#699CFF; transition: 0.5s ease;";
+    pink_slide.style  = "background-color:#699CFF;";
     hLine.style = "border:1px solid #699CFF; ";
     H3.forEach(function(aa,bb){
         H3[0].style = "color:#06337C";
@@ -37,7 +37,7 @@ function h4_before(){
                             댕냥이님들이 만족한 최애템까지 보려면?`;
     H4.style = "color:#5F0D0D";
     PinkBox.classList.remove('bgcolor');
-    pink_slide.style  = "background-color:#FF9290; transition: 0.5s ease;";
+    pink_slide.style  = "background-color:#FF9290;";
     hLine.style = "border:1px solid #FF9290;";
     H3.forEach(function(aa,bb){
         H3[0].style = "color:#5F0D0D";
