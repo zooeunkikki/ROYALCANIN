@@ -40,9 +40,9 @@
 .slide .slick-slide  p span{
     font-family: 'S-CoreDream-7ExtraBold'; font-size: 2rem; padding-left: 30px;
 }
+.slide .slick-slide p:nth-of-type(1){width: 400px; height: 400px; overflow: hidden;}
 
-
-.slide .slick-slide img{width: 100%;}
+.slide .slick-slide img{width: 100%; object-fit: cover;}
 
 .slide figure {
     margin: 0;
