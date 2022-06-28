@@ -7,6 +7,7 @@ $(document).on('ready', function () {
         autoplaySpeed: 3000,
         pauseOnHover:true,
         easing:'linear'
+
     });
 });
         //슬라이드 같은데 모바일에 넣어봄
