@@ -118,6 +118,61 @@
     font-size: 0;
 }
 
+/* ==============================반응형=================================
+===================================================================================
+===================================================================================
+===================================================================================
+===================================================================================
+=================================================================================== */
+/* mobaile 
+display none
+*/
+
+
+@media (min-width:767px)and (max-width:1023px){
+    .slide{
+        width: 100%;
+    }
+
+    .slide .slick-slide{
+        width: inherit;
+    }
+
+    .slide .slick-slide p:nth-of-type(1){
+        width: inherit;
+        height: 30vh;
+        overflow:hidden ;
+    }
+
+    /* next & prev */
+    .slide .slick-prev{
+        left: 8%; top: 50%;
+        transform: translateY(-250%) rotate(180deg);
+    }
+
+    .slide .slick-next{
+        right: 2%; top: 50%;
+        transform: translateY(-250%);
+    }
 
 
 
+    /* dots */
+    .slide .slick-dots{
+        position: absolute;
+        left: 0;
+        bottom: 35%;
+        /* transform: translateY(-150%); */
+    }
+
+    /* txt */
+    .slide .slick-slide   p:nth-of-type(2){
+        font-size: 0.9rem;
+    }
+    .slide .slick-slide  p span{
+    padding-left: 10%;
+    font-size: 1.2rem;
+    }
+
+
+}
