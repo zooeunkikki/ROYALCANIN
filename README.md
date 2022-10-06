@@ -34,12 +34,13 @@
 
 
 
+
+
+
+
 Site View
 
 ![로얄캐닌전체화면1](https://user-images.githubusercontent.com/106298540/194187868-635d9a41-8e77-4d56-85da-aa49645f71d9.png)
-
-![image 2](https://user-images.githubusercontent.com/106298540/194197595-3105b1bf-164a-44ee-a8d2-362dda2e13f4.png)
-
 
 ![04_이벤트페이지](https://user-images.githubusercontent.com/106298540/194188125-abb0dbb9-5018-4f7c-8713-49af13cbc4fe.jpg)
 
