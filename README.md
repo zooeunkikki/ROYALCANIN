@@ -10,7 +10,7 @@
 
 작품 소개: 반려동물을 키우는 반려인이라면 한 번쯤 접해본 유명 브랜드이지만 사이트 관리가 미흡하고 사용성이 낮아 제품을 확인하는 부분에서 어 려움을 느꼈습니다. 타 제품 사이트처럼 제품의 홍보영 역 및 고객과의 커뮤니케이션이 이 루어지는 부분이 없어 사이트를 선 정하게 되었습니다.
 
-디자인 & 기능설명:
+디자인 & 기능 설명:
 
 ![Group 90](https://user-images.githubusercontent.com/106298540/194186559-94e500bf-d148-4ecb-b935-392be11dcd2a.png)
 
@@ -31,3 +31,24 @@
 ![09_로그인](https://user-images.githubusercontent.com/106298540/194186834-37194ed2-d5fb-4816-a5bc-32b2181fb2ae.jpg)
 
 5_로그인 창 진입 시 랜덤 값으로 배너 이미지가 변경됩니다.
+
+
+
+Site View
+
+![로얄캐닌전체화면1](https://user-images.githubusercontent.com/106298540/194187868-635d9a41-8e77-4d56-85da-aa49645f71d9.png)
+
+![image 2](https://user-images.githubusercontent.com/106298540/194188066-b4d2fac2-fa76-4f48-a2eb-9183b1541539.png)
+
+![04_이벤트페이지](https://user-images.githubusercontent.com/106298540/194188125-abb0dbb9-5018-4f7c-8713-49af13cbc4fe.jpg)
+
+![07_장바구니](https://user-images.githubusercontent.com/106298540/194188134-2c86d1f6-60b1-4b9b-8ff1-942140962152.jpg)
+
+![08(3)_고객센터_아래버튼 (1)](https://user-images.githubusercontent.com/106298540/194188153-32421672-480a-4916-b98f-39814c1b08fa.jpg)
+
+
+
+
+문제처리방식
+
+
